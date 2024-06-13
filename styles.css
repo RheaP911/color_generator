@@ -68,6 +68,16 @@ h1 {
     gap: 1.5rem;
 }
 
+.division {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.5rem;
+
+}
+
 .card {
     min-width: 150px;
     max-width: 250px;
@@ -147,7 +157,16 @@ p {
     cursor: pointer;
 }
 
-a {
+.buttonCopy {
+    background-color: transparent;
+    border: none;
+    color: var(--black);
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.button {
     background-color: var(--purple);
     text-decoration: none;
     color: var(--white);
@@ -156,12 +175,22 @@ a {
     padding: 12px 45px;
     border-radius: 25px;
     margin-top: 1.5rem;
+    margin-bottom: 3rem;
     font-family: var(--della-respira);
+    border: transparent;
+    cursor: pointer;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 455px) {
+    body {
+        padding-top: 1rem;
+    }
     h1{
         font-size: 32px;
+    }
+    a {
+        font-size: 18px;
+        padding: 10px 25px;
     }
 }
 /* 

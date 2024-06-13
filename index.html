@@ -12,58 +12,70 @@
     <div class="container">
         <h1>Color Generator</h1>
         <div class="content">
-            <div class="card 1">
-                <div class="color one"></div>
-                <div class="name">
-                    <p class="hexcode">#3D5B81</p>
-                    <div class="tooltip">
-                        <ion-icon name="copy-outline" class="icon"></ion-icon>
-                        <span class="tooltipText">Copy</span>
+            <div class="division cards">
+                <div class="card 1">
+                    <div class="color one" id="card1"></div>
+                    <div class="name">
+                        <p class="hexcode1" id="hexcode1">#3D5B81</p>
+                        <div class="tooltip">
+                            <ion-icon name="copy-outline" class="icon"></ion-icon>
+                            <span class="tooltipText">Copy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card 2">
+                    <div class="color two" id="card2"></div>
+                    <div class="name">
+                        <p class="hexcode2" id="hexcode2">#99C1DA</p>
+                        <div class="tooltip">
+                            <button id="copyButton" class="buttonCopy" onclick="copyCode()">
+                                <ion-icon name="copy-outline" class="icon"></ion-icon>
+                            </button>
+                            <span class="tooltipText">Copy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card 3">
+                    <div class="color three" id="card3"></div>
+                    <div class="name">
+                        <p class="hexcode3" id="hexcode3">#DFFBFC</p>
+                        <div class="tooltip">
+                            <button class="buttonCopy" onclick="copyCode()">
+                                <ion-icon name="copy-outline" class="icon"></ion-icon>
+                            </button>
+                            <span class="tooltipText">Copy</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card 2">
-                <div class="color two"></div>
-                <div class="name">
-                    <p class="hexcode">#99C1DA</p>
-                    <div class="tooltip">
-                        <ion-icon name="copy-outline" class="icon"></ion-icon>
-                        <span class="tooltipText">Copy</span>
+            <div class="division cards">
+                <div class="card 4">
+                    <div class="color four" id="card4"></div>
+                    <div class="name">
+                        <p class="hexcode4" id="hexcode4">#EE6B4D</p>
+                        <div class="tooltip">
+                            <button class="buttonCopy" onclick="copyCode()">
+                                <ion-icon name="copy-outline" class="icon"></ion-icon>
+                            </button>
+                            <span class="tooltipText">Copy</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card 3">
-                <div class="color three"></div>
-                <div class="name">
-                    <p class="hexcode">#DFFBFC</p>
-                    <div class="tooltip">
-                        <ion-icon name="copy-outline" class="icon"></ion-icon>
-                        <span class="tooltipText">Copy</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card 4">
-                <div class="color four"></div>
-                <div class="name">
-                    <p class="hexcode">#EE6B4D</p>
-                    <div class="tooltip">
-                        <ion-icon name="copy-outline" class="icon"></ion-icon>
-                        <span class="tooltipText">Copy</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card 5">
-                <div class="color five"></div>
-                <div class="name">
-                    <p class="hexcode">#293241</p>
-                    <div class="tooltip">
-                        <ion-icon name="copy-outline" class="icon"></ion-icon>
-                        <span class="tooltipText">Copy</span>
+                <div class="card 5">
+                    <div class="color five" id="card5"></div>
+                    <div class="name">
+                        <p class="hexcode5" id="hexcode5">#293241</p>
+                        <div class="tooltip">
+                            <button class="buttonCopy" onclick="copyCode()">
+                                <ion-icon name="copy-outline" class="icon"></ion-icon>
+                            </button>
+                            <span class="tooltipText">Copy</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="">Generate Pallette</a>
+        <button type="button" class="button" onclick="generatePallete()">Generate Pallette</button>
     </div>
     <script src="script.js"></script>
 </body>
