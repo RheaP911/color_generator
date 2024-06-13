@@ -196,14 +196,13 @@ p {
         gap: 0.8rem;
     }
     .card {
-        width: 95vw;
+        width: 80px;
         border-radius: 15px;
-        min-height: 20px;
-        display: inline;
+        min-height: 80px;
     }
     .color {
-        min-width: 100px;
-        min-height: 40px;
+        min-width: 80px;
+        min-height: 100px;
         border-radius: 15px;
     }
     .name {
