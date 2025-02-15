@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Jost:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet"> -->
+
+
+
+</head>
+
+<body class="bg-primary  color-black font-poppins ">
+    <header class="min-h-fit border border-yellow-500 flex justify-between items-center px-[12%] py-[1.5%]">
+        <div>
+            <button class="flex flex-row items-center gap-5" onclick="openSection(event, 'landing-page')">
+                <img src="/resources/logo.svg" width="50px" alt="">
+                <p class=" font-semibold text-2xl tracking-wide">Rhealyn Panganiban</p>
+            </button>
+        </div>
+        <div class="nav">
+            <ul class="flex gap-5 text-xl">
+                <li class="py-2 px-5 font-medium border-blue-900">
+                    <button class="tablinks" onclick="openSection(event, 'about')">About</button>
+                </li>
+                <li class="py-2 px-5 font-medium border-blue-900">
+                    <button class="tablinks" onclick="openSection(event, 'portfolio')">Portfolio</button>
+                </li>
+                <li class="py-2 px-5 font-medium border-blue-900">
+                    <button class="tablinks" onclick="openSection(event, 'contact')">Contact</button>
+                </li>
+                <li class="flex justify-between items-center gap-3 text-3xl" id="socials">
+                    <i class='bx bxl-facebook facebook-icon p-2 border-blue-900'></i>
+                    <i class='bx bxl-linkedin-square linked-icon p-2   border-blue-900'></i>
+                    <i class='bx bxs-envelope email-icon p-2 border-blue-900'></i>
+                </li>
+            </ul>
+        </div>
+        <input type="checkbox" id="check" class="hidden">
+        <label for="check" class="text-3xl cursor-pointer hidden">
+            <i class='bx bx-menu menu-icon'></i>
+            <i class='bx bx-x close-icon'></i>
+        </label>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    <!-- Yes, I am reading your html -->
+
+</body>
+
+</html>

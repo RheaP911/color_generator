@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Jost:wght@300;400;600&family=Allura&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root variables */
+:root {
+  --poppins: "Poppins", sans-serif;
+  --jost: "Jost", sans-serif;
+  --allura: "Allura", serif;
+
+  --primary: #f0f1ff;
+  --gray-100: #7a7373;
+  --gray-200: #4e4949;
+  --pink: #fca5f1;
+  --purple: #cdb5ff;
+}
+
+/* Apply global fonts */
+/* body {
+  font-family: var(--font-poppins);
+} */
