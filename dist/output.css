@@ -1,5 +1,4 @@
 /*! tailwindcss v4.0.5 | MIT License | https://tailwindcss.com */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Jost:wght@300;400;600&family=Allura&display=swap');
 .\@container {
   container-type: inline-size;
 }
@@ -62,6 +61,9 @@
 }
 .isolation-auto {
   isolation: auto;
+}
+.z-10 {
+  z-index: 10;
 }
 .z-auto {
   z-index: auto;
@@ -134,9 +136,6 @@
 }
 .container {
   width: 100%;
-}
-.mx-auto {
-  margin-inline: auto;
 }
 .box-border {
   box-sizing: border-box;
@@ -225,6 +224,18 @@
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.h-\[85\%\] {
+  height: 85%;
+}
+.h-\[100\%\] {
+  height: 100%;
+}
+.h-\[15\%\] {
+  height: 15%;
+}
+.h-\[90\%\] {
+  height: 90%;
+}
 .h-screen {
   height: 100vh;
 }
@@ -234,14 +245,14 @@
 .max-h-screen {
   max-height: 100vh;
 }
-.min-h-fit {
-  min-height: fit-content;
-}
 .min-h-screen {
   min-height: 100vh;
 }
 .w-1\/2 {
   width: calc(1/2 * 100%);
+}
+.w-\[100\%\] {
+  width: 100%;
 }
 .w-screen {
   width: 100vw;
@@ -495,6 +506,9 @@
 .auto-rows-min {
   grid-auto-rows: min-content;
 }
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
 .grid-cols-none {
   grid-template-columns: none;
 }
@@ -736,6 +750,9 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 .scroll-auto {
   scroll-behavior: auto;
 }
@@ -808,8 +825,23 @@
 .bg-\(color\:--my-color\) {
   background-color: var(--my-color);
 }
+.bg-\[\#3D5B81\] {
+  background-color: #3D5B81;
+}
 .bg-\[\#0088cc\] {
   background-color: #0088cc;
+}
+.bg-\[\#99C1DA\] {
+  background-color: #99C1DA;
+}
+.bg-\[\#293241\] {
+  background-color: #293241;
+}
+.bg-\[\#DFFBFC\] {
+  background-color: #DFFBFC;
+}
+.bg-\[\#EE6B4D\] {
+  background-color: #EE6B4D;
 }
 .bg-\[color\:var\(--my-color\)\] {
   background-color: var(--my-color);
@@ -824,10 +856,6 @@
 .bg-conic {
   --tw-gradient-position: in oklab;
   background-image: conic-gradient(var(--tw-gradient-stops));
-}
-.bg-gradient-to-r {
-  --tw-gradient-position: to right in oklab;
-  background-image: linear-gradient(var(--tw-gradient-stops));
 }
 .bg-radial {
   --tw-gradient-position: in oklab;
@@ -987,12 +1015,6 @@
 .object-top {
   object-position: top;
 }
-.px-\[12\%\] {
-  padding-inline: 12%;
-}
-.py-\[1\.5\%\] {
-  padding-block: 1.5%;
-}
 .text-center {
   text-align: center;
 }
@@ -1034,6 +1056,15 @@
 }
 .align-top {
   vertical-align: top;
+}
+.font-\[Oswald\] {
+  font-family: Oswald;
+}
+.font-\[Poppins\] {
+  font-family: Poppins;
+}
+.text-\[2rem\] {
+  font-size: 2rem;
 }
 .leading-none {
   --tw-leading: 1;
@@ -1111,9 +1142,6 @@
 }
 .\[color\:red\]\/50\! {
   color: color-mix(in oklab, red 50%, transparent) !important;
-}
-.text-transparent {
-  color: transparent;
 }
 .capitalize {
   text-transform: capitalize;
@@ -1536,15 +1564,25 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 }
-:root {
-  --poppins: "Poppins", sans-serif;
-  --jost: "Jost", sans-serif;
-  --allura: "Allura", serif;
-  --primary: #f0f1ff;
-  --gray-100: #7a7373;
-  --gray-200: #4e4949;
-  --pink: #fca5f1;
-  --purple: #cdb5ff;
+@layer components {
+  .card::before {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    z-index: 0;
+  }
+  .card:hover::before {
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .card:hover .copy-icon, .card:hover .copy-text {
+    visibility: visible;
+    transition: visibility 0.3s ease-in-out;
+  }
 }
 @property --tw-translate-x {
   syntax: "*";

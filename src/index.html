@@ -4,61 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Color Generator</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/dist/output.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Allura&family=Jost:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap"
-        rel="stylesheet"> -->
-
-
-
+        rel="stylesheet">
+    <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-primary  color-black font-poppins ">
-    <header class="min-h-fit border border-yellow-500 flex justify-between items-center px-[12%] py-[1.5%]">
-        <div>
-            <button class="flex flex-row items-center gap-5" onclick="openSection(event, 'landing-page')">
-                <img src="/resources/logo.svg" width="50px" alt="">
-                <p class=" font-semibold text-2xl tracking-wide">Rhealyn Panganiban</p>
-            </button>
+<body class="font-[Poppins] cursor-pointer  overflow-hidden">
+    <div class="w-screen h-screen flex flex-col bg-white">
+        <div class="grid grid-cols-5 h-[90%] w-[100%]">
+            <div class="card relative bg-[#3D5B81] p-4 flex justify-center items-center overflow-hidden" id="card-1">
+                <div class="flex flex-col justify-center items-center w-[100%] h-[100%]">
+                    <div class="w-[100%] h-[85%] flex justify-center items-center gap-2 border-black">
+                        <ion-icon name="clipboard-outline" class="copy-icon text-white text-2xl invisible"></ion-icon>
+                        <p class="copy-text text-md text-white invisible"> Copy</p>
+                    </div>
+                    <div class="w-[100%] h-[15%] p-4 flex justify-center items-end  border-black">
+                        <p class="text-[2rem] text-white font-[Oswald] tracking-wider z-10">#3D5B81</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-2 bg-[#99C1DA]" id="card-2">
+                <div >
+                    <div class="copy-icon">
+                        <ion-icon name="copy-outline"></ion-icon>
+                    </div>
+                    <div class="card-hex">
+                        <p>#99C1DA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#DFFBFC]" id="card-3">
+                <div class="card-container">
+                    <div class="copy-icon">
+                        <ion-icon name="copy-outline"></ion-icon>
+                    </div>
+                    <div class="card-hex">
+                        <p>#DFFBFC</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#EE6B4D]" id="card-4">
+                <div class="card-container">
+                    <div class="copy-icon">
+                        <ion-icon name="copy-outline"></ion-icon>
+                    </div>
+                    <div class="card-hex">
+                        <p>#EE6B4D</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#293241]" id="card-5">
+                <div class="flex flex-col justify-center items-center w-[100%] h-[85%]">
+                    <div class="copy-icon">
+                        <ion-icon name="copy-outline"></ion-icon>
+                    </div>
+                    <div class="card-hex">
+                        <p>#293241</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="nav">
-            <ul class="flex gap-5 text-xl">
-                <li class="py-2 px-5 font-medium border-blue-900">
-                    <button class="tablinks" onclick="openSection(event, 'about')">About</button>
-                </li>
-                <li class="py-2 px-5 font-medium border-blue-900">
-                    <button class="tablinks" onclick="openSection(event, 'portfolio')">Portfolio</button>
-                </li>
-                <li class="py-2 px-5 font-medium border-blue-900">
-                    <button class="tablinks" onclick="openSection(event, 'contact')">Contact</button>
-                </li>
-                <li class="flex justify-between items-center gap-3 text-3xl" id="socials">
-                    <i class='bx bxl-facebook facebook-icon p-2 border-blue-900'></i>
-                    <i class='bx bxl-linkedin-square linked-icon p-2   border-blue-900'></i>
-                    <i class='bx bxs-envelope email-icon p-2 border-blue-900'></i>
-                </li>
-            </ul>
+        <div class="btn-container">
+            <button type="button" class="button" onclick="generateColors()">Generate Colors</button>
         </div>
-        <input type="checkbox" id="check" class="hidden">
-        <label for="check" class="text-3xl cursor-pointer hidden">
-            <i class='bx bx-menu menu-icon'></i>
-            <i class='bx bx-x close-icon'></i>
-        </label>
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
-    <!-- Yes, I am reading your html -->
-
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
