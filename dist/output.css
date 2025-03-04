@@ -224,17 +224,17 @@
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
-.h-\[85\%\] {
-  height: 85%;
-}
-.h-\[100\%\] {
-  height: 100%;
+.h-\[8\%\] {
+  height: 8%;
 }
 .h-\[15\%\] {
   height: 15%;
 }
-.h-\[90\%\] {
-  height: 90%;
+.h-\[85\%\] {
+  height: 85%;
+}
+.h-full {
+  height: 100%;
 }
 .h-screen {
   height: 100vh;
@@ -251,7 +251,10 @@
 .w-1\/2 {
   width: calc(1/2 * 100%);
 }
-.w-\[100\%\] {
+.w-\[70\%\] {
+  width: 70%;
+}
+.w-full {
   width: 100%;
 }
 .w-screen {
@@ -265,6 +268,9 @@
 }
 .min-w-screen {
   min-width: 100vw;
+}
+.flex-1 {
+  flex: 1;
 }
 .flex-auto {
   flex: auto;
@@ -1015,6 +1021,15 @@
 .object-top {
   object-position: top;
 }
+.px-\[2\%\] {
+  padding-inline: 2%;
+}
+.px-\[5\%\] {
+  padding-inline: 5%;
+}
+.px-\[50\%\] {
+  padding-inline: 50%;
+}
 .text-center {
   text-align: center;
 }
@@ -1056,6 +1071,12 @@
 }
 .align-top {
   vertical-align: top;
+}
+.font-\[BagelFatOne\] {
+  font-family: BagelFatOne;
+}
+.font-\[Bagel\] {
+  font-family: Bagel;
 }
 .font-\[Oswald\] {
   font-family: Oswald;
@@ -1142,6 +1163,15 @@
 }
 .\[color\:red\]\/50\! {
   color: color-mix(in oklab, red 50%, transparent) !important;
+}
+.text-\[\#4C0784\] {
+  color: #4C0784;
+}
+.text-\[\#785ED5\] {
+  color: #785ED5;
+}
+.text-\[\#BD05E0\] {
+  color: #BD05E0;
 }
 .capitalize {
   text-transform: capitalize;
@@ -1288,6 +1318,9 @@
 .scheme-only-light {
   color-scheme: only light;
 }
+.opacity-0 {
+  opacity: 0%;
+}
 .mix-blend-plus-darker {
   mix-blend-mode: plus-darker;
 }
@@ -1411,6 +1444,10 @@
 }
 .transition-normal {
   transition-behavior: normal;
+}
+.duration-500 {
+  --tw-duration: 500ms;
+  transition-duration: 500ms;
 }
 .ease-linear {
   --tw-ease: linear;
@@ -1558,6 +1595,27 @@
 .transform-view {
   transform-box: view-box;
 }
+.group-hover\:visible {
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      visibility: visible;
+    }
+  }
+}
+.group-hover\:opacity-100 {
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      opacity: 100%;
+    }
+  }
+}
+.hover\:text-\[\#785ED5\] {
+  &:hover {
+    @media (hover: hover) {
+      color: #785ED5;
+    }
+  }
+}
 .dark\:shadow-none {
   @media (prefers-color-scheme: dark) {
     --tw-shadow: 0 0 #0000;
@@ -1578,10 +1636,6 @@
   .card:hover::before {
     bottom: 0;
     transition: all 0.3s ease-in-out;
-  }
-  .card:hover .copy-icon, .card:hover .copy-text {
-    visibility: visible;
-    transition: visibility 0.3s ease-in-out;
   }
 }
 @property --tw-translate-x {
@@ -1837,6 +1891,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-ease {
   syntax: "*";
   inherits: false;
@@ -1854,10 +1912,6 @@
   inherits: false;
 }
 @property --tw-contain-style {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-duration {
   syntax: "*";
   inherits: false;
 }
