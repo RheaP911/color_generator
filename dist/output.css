@@ -251,8 +251,14 @@
 .w-1\/2 {
   width: calc(1/2 * 100%);
 }
+.w-\[15\%\] {
+  width: 15%;
+}
 .w-\[70\%\] {
   width: 70%;
+}
+.w-\[100\%\] {
+  width: 100%;
 }
 .w-full {
   width: 100%;
@@ -512,6 +518,9 @@
 .auto-rows-min {
   grid-auto-rows: min-content;
 }
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
@@ -520,6 +529,9 @@
 }
 .grid-cols-subgrid {
   grid-template-columns: subgrid;
+}
+.grid-rows-5 {
+  grid-template-rows: repeat(5, minmax(0, 1fr));
 }
 .grid-rows-none {
   grid-template-rows: none;
@@ -1024,11 +1036,8 @@
 .px-\[2\%\] {
   padding-inline: 2%;
 }
-.px-\[5\%\] {
-  padding-inline: 5%;
-}
-.px-\[50\%\] {
-  padding-inline: 50%;
+.py-\[2\%\] {
+  padding-block: 2%;
 }
 .text-center {
   text-align: center;
@@ -1072,17 +1081,35 @@
 .align-top {
   vertical-align: top;
 }
-.font-\[BagelFatOne\] {
-  font-family: BagelFatOne;
-}
-.font-\[Bagel\] {
-  font-family: Bagel;
-}
 .font-\[Oswald\] {
   font-family: Oswald;
 }
 .font-\[Poppins\] {
   font-family: Poppins;
+}
+.text-\[\.5rem\] {
+  font-size: .5rem;
+}
+.text-\[1\.5rem\] {
+  font-size: 1.5rem;
+}
+.text-\[1\.8rem\] {
+  font-size: 1.8rem;
+}
+.text-\[2\.5rem\] {
+  font-size: 2.5rem;
+}
+.text-\[3\.5rem\] {
+  font-size: 3.5rem;
+}
+.text-\[4\.5rem\] {
+  font-size: 4.5rem;
+}
+.text-\[5rem\] {
+  font-size: 5rem;
+}
+.text-\[24rem\] {
+  font-size: 24rem;
 }
 .text-\[2rem\] {
   font-size: 2rem;
@@ -1164,14 +1191,11 @@
 .\[color\:red\]\/50\! {
   color: color-mix(in oklab, red 50%, transparent) !important;
 }
-.text-\[\#4C0784\] {
-  color: #4C0784;
-}
 .text-\[\#785ED5\] {
   color: #785ED5;
 }
-.text-\[\#BD05E0\] {
-  color: #BD05E0;
+.text-\[rem\] {
+  color: rem;
 }
 .capitalize {
   text-transform: capitalize;
@@ -1636,6 +1660,11 @@
   .card:hover::before {
     bottom: 0;
     transition: all 0.3s ease-in-out;
+  }
+  @media (max-width: 1024px) {
+    .card::before {
+      display: none;
+    }
   }
 }
 @property --tw-translate-x {

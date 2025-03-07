@@ -25,71 +25,71 @@
 
 <body class="font-[Poppins]   overflow-hidden " onload="generateColors()">
     <div class="w-screen h-screen flex flex-col bg-white">
-        <div class="header w-full h-[8%] px-[2%] flex justify-between items-center">
+        <div class="header w-full h-[8%] px-[2%] py-[2%]  flex justify-center md:justify-between items-center">
             <h1 class="text-4xl tracking-wide text-[#785ED5] cursor-pointer" style="font-family: 'Bagel Fat One', cursive;">coolay</h1>
-            <p class="text-gray-700">Developed by 
+            <p class="text-gray-700 hidden md:flex">Developed by 
                 <a href="" class="hover:text-[#785ED5] font-semibold">Rhealyn</a>
                  &copy; 2025</p>
         </div>
-        <div class="grid grid-cols-5 h-[85%] w-full cursor-pointer">
-            <div id="card1" class="card relative bg-[#3D5B81] p-4 flex justify-center items-center overflow-hidden group" id="card-1">
-                <div class="flex flex-col justify-center items-center w-full h-full">
-                    <div class="w-full h-[85%] flex justify-center items-end gap-2 ">
-                        <ion-icon name="clipboard-outline" class="copy-icon text-white text-2xl opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible "></ion-icon>
-                        <p class="copy-text text-md text-white opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible z-10"> Copy</p>
+        <div class="grid grid-cols-1 grid-rows-5  h-[85%] w-full cursor-pointer lg:grid-rows-1 lg:grid-cols-5">
+            <div id="card1" class="card relative p-4 flex justify-center items-center overflow-hidden group" id="card-1">
+                <div class="flex flex-row lg:flex-col justify-start lg:justify-center items-center w-full h-full ">
+                    <div class="w-full h-[85%] hidden lg:flex justify-center items-end gap-2">
+                        <ion-icon name="clipboard-outline" class="copy-icon text-white text-2xl opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible"></ion-icon>
+                        <p class="copy-text text-md text-white opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible z-10 "> Copy</p>
                     </div>
-                    <div class="w-full h-[15%] p-4 flex justify-center items-end  ">
-                        <p id="hexcode1" class="text-[2rem] text-white font-[Oswald] tracking-wider z-10 ">#3D5B81</p>
-                    </div>
-                </div>
-            </div>
-            <div id="card2" class="card relative bg-[#99C1DA] p-4 flex justify-center items-center overflow-hidden group" id="card-1">
-                <div class="flex flex-col justify-center items-center w-full h-full">
-                    <div class="w-full h-[85%] flex justify-center items-end gap-2 ">
-                        <ion-icon name="clipboard-outline" class="copy-icon text-white text-2xl opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible "></ion-icon>
-                        <p class="copy-text text-md text-white opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible z-10"> Copy</p>
-                    </div>
-                    <div class="w-full h-[15%] p-4 flex justify-center items-end ">
-                        <p id="hexcode2" class="text-[2rem] text-white font-[Oswald] tracking-wider z-10 ">#99C1DA</p>
+                    <div class="w-full h:full lg:h-[15%] p-4  flex justify-end lg:justify-center lg:items-end">
+                        <p id="hexcode1" class="text-[1.8rem] md:text-[2.5rem] lg:text-[2rem] text-white font-[Oswald] tracking-wider z-10  "></p>
                     </div>
                 </div>
             </div>
-            <div id="card3" class="card relative bg-[#DFFBFC] p-4 flex justify-center items-center overflow-hidden group" id="card-1">
-                <div class="flex flex-col justify-center items-center w-full h-full">
-                    <div class="w-full h-[85%] flex justify-center items-end gap-2 ">
-                        <ion-icon name="clipboard-outline" class="copy-icon text-white text-2xl opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible "></ion-icon>
-                        <p class="copy-text text-md text-white opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible z-10"> Copy</p>
+            <div id="card2" class="card relative p-4 flex justify-center items-center overflow-hidden group" id="card-1">
+                <div class="flex flex-row lg:flex-col justify-start lg:justify-center items-center w-full h-full ">
+                    <div class="w-full h-[85%] hidden lg:flex justify-center items-end gap-2">
+                        <ion-icon name="clipboard-outline" class="copy-icon text-white text-2xl opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible"></ion-icon>
+                        <p class="copy-text text-md text-white opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible z-10 "> Copy</p>
                     </div>
-                    <div class="w-full h-[15%] p-4 flex justify-center items-end  ">
-                        <p id="hexcode3" class="text-[2rem] text-white font-[Oswald] tracking-wider z-10 ">#DFFBFC</p>
-                    </div>
-                </div>
-            </div>
-            <div id="card4" class="card relative bg-[#EE6B4D] p-4 flex justify-center items-center overflow-hidden group" id="card-1">
-                <div class="flex flex-col justify-center items-center w-full h-full">
-                    <div class="w-full h-[85%] flex justify-center items-end gap-2 ">
-                        <ion-icon name="clipboard-outline" class="copy-icon text-white text-2xl opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible "></ion-icon>
-                        <p class="copy-text text-md text-white opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible z-10"> Copy</p>
-                    </div>
-                    <div class="w-full h-[15%] p-4 flex justify-center items-end  ">
-                        <p id="hexcode4" class="text-[2rem] text-white font-[Oswald] tracking-wider z-10 ">#EE6B4D</p>
+                    <div class="w-full h:full lg:h-[15%] p-4  flex justify-end lg:justify-center lg:items-end">
+                        <p id="hexcode2" class="text-[1.8rem] md:text-[2.5rem] lg:text-[2rem] text-white font-[Oswald] tracking-wider z-10  "></p>
                     </div>
                 </div>
             </div>
-            <div id="card5" class="card relative bg-[#293241] p-4 flex justify-center items-center overflow-hidden group" id="card-1">
-                <div class="flex flex-col justify-center items-center w-full h-full">
-                    <div class="w-full h-[85%] flex justify-center items-end gap-2 ">
-                        <ion-icon name="clipboard-outline" class="copy-icon text-white text-2xl opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible "></ion-icon>
-                        <p class="copy-text text-md text-white opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible z-10"> Copy</p>
+            <div id="card3" class="card relative p-4 flex justify-center items-center overflow-hidden group" id="card-1">
+                <div class="flex flex-row lg:flex-col justify-start lg:justify-center items-center w-full h-full ">
+                    <div class="w-full h-[85%] hidden lg:flex justify-center items-end gap-2">
+                        <ion-icon name="clipboard-outline" class="copy-icon text-white text-2xl opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible"></ion-icon>
+                        <p class="copy-text text-md text-white opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible z-10 "> Copy</p>
                     </div>
-                    <div class="w-full h-[15%] p-4 flex justify-center items-end ">
-                        <p id="hexcode5" class="text-[2rem] text-white font-[Oswald] tracking-wider z-10 ">#293241</p>
+                    <div class="w-full h:full lg:h-[15%] p-4  flex justify-end lg:justify-center lg:items-end">
+                        <p id="hexcode3" class="text-[1.8rem] md:text-[2.5rem] lg:text-[2rem] text-white font-[Oswald] tracking-wider z-10  "></p>
+                    </div>
+                </div>
+            </div>
+            <div id="card4" class="card relative p-4 flex justify-center items-center overflow-hidden group" id="card-1">
+                <div class="flex flex-row lg:flex-col justify-start lg:justify-center items-center w-full h-full ">
+                    <div class="w-full h-[85%] hidden lg:flex justify-center items-end gap-2">
+                        <ion-icon name="clipboard-outline" class="copy-icon text-white text-2xl opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible"></ion-icon>
+                        <p class="copy-text text-md text-white opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible z-10 "> Copy</p>
+                    </div>
+                    <div class="w-full h:full lg:h-[15%] p-4  flex justify-end lg:justify-center lg:items-end">
+                        <p id="hexcode4" class="text-[1.8rem] md:text-[2.5rem] lg:text-[2rem] text-white font-[Oswald] tracking-wider z-10  "></p>
+                    </div>
+                </div>
+            </div>
+            <div id="card5" class="card relative p-4 flex justify-center items-center overflow-hidden group" id="card-1">
+                <div class="flex flex-row lg:flex-col justify-start lg:justify-center items-center w-full h-full ">
+                    <div class="w-full h-[85%] hidden lg:flex justify-center items-end gap-2">
+                        <ion-icon name="clipboard-outline" class="copy-icon text-white text-2xl opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible"></ion-icon>
+                        <p class="copy-text text-md text-white opacity-0 invisible transition-opacity duration-500 group-hover:opacity-100 group-hover:visible z-10 "> Copy</p>
+                    </div>
+                    <div class="w-full h:full lg:h-[15%] p-4  flex justify-end lg:justify-center lg:items-end">
+                        <p id="hexcode5" class="text-[1.8rem] md:text-[2.5rem] lg:text-[2rem] text-white font-[Oswald] tracking-wider z-10  "></p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="btn-container  flex flex-1 justify-center items-center ">
-            <button type="button" class="button w-[70%]  p-2 px-12 border border-blue text-lg tracking-wide" onclick="generateColors()">Generate Colors</button>
+            <button type="button" class="button w-[70%]  p-2 px-12 lg:border lg:border-blue text-lg tracking-wide" onclick="generateColors()">Generate Colors</button>
         </div>
     </div>
     <script src="/src/script.js"></script>
